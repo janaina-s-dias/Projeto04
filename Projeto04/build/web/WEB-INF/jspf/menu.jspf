@@ -4,16 +4,20 @@
 <link href='src/css/bootstrap.css' rel='stylesheet'>
      
 
-<nav class="nav nav-tabs nav-justified">
+                    <nav class="nav nav-tabs nav-justified">
                       <div class="container-fluid">
                         <div class="navbar-header">
-                          <a class="navbar-brand" href="home.jsp">Controle</a>
+                            <a class="navbar-brand" href="home.jsp"><b>SISCON</b></a>
                         </div>
                         <ul class="nav navbar-nav">
-                          <li class="active">  <a href="home.jsp">Página Inicial</a></li>
-                          <li> <a href="cliente.jsp"> Cliente </a></li>
-                          <li><a href="fornecedor.jsp">Fornecedores</a></li>
-                          <li><a href="equipe.jsp">Sobre nós</a></li>
+                          <!--<li class="active">  <a href="home.jsp">Página Inicial</a></li> -->
+                          <li><a href="cliente.jsp"> <p style="color:  black; font-size: 18px">Cliente</p> </a></li>
+                          <li><a href="listarCliente.jsp"> <p style="color:  black; font-size: 18px">Listar Cliente</p> </a></li>
+                          <li><a href="listarFornecedor.jsp"> <p style="color:  black; font-size: 18px">Listar Fornecedor</p> </a></li>
+                          <li><a href="fornecedor.jsp"><p style="color:  black; font-size: 18px">Fornecedores</p></a></li>
+                          <li><a href="equipe.jsp"><p style="color:  black; font-size: 18px"> Sobre nós</p></a></li>
                         </ul>
+                            
                       </div>
                     </nav>
+                  

@@ -24,16 +24,23 @@
         <div class="row">
                 <div class="col-md-12">
                 <%@include file="WEB-INF/jspf/menu.jspf" %>
+              
                 </div>
                 </div>
          <div class="container-fluid">
             <div class="row">
             <div class="col-md-12">
-              <center><h3>Gerenciamento de Informções</h3></center>
+                <div style="background-color: #000\9">
+              <center><h2>SISCON - Sistema de Controle de Informações</h2></center><br/>
              
-       
+              
                 <center>
-                	<p> <b>Sistema Gerenciador de Cadastro</b> fornece as opções de adicionar, alterar e excluir um registro de cliente ou fornecedor.</p><br/> 
+                  
+                    <h4><p> O <b>SISCON </b> tem como objetivo auxiliar o seu cliente da melhor forma possível ao realizar o gerenciamento das informações do seu estabelecimento. <br/>
+                        O sistema fornece as opções de adicionar, alterar e excluir de forma segura as informações. <br/>
+                        <b>CONFIRA JÁ!!!</b>
+                        </p></h4></div><br/> 
+                    
                 </center>
              
 
@@ -43,8 +50,8 @@
                                   <div class='thumbnail' >
                                       <img src="images/client-icon-png-21.jpg" alt='...' class='img-circle' width='242' height='200'>
                                           <div class='caption'>
-                                            <h3 style='color: #006666' align='center'>Clientes</h3>
-                                               <p align='center'><b>Algum texto: </b><a href="" </p></a>
+                                              <h3 style='color: #333' align='center'><b>Clientes</b></h3>
+                                              <a href="cliente.jsp" target="_blank"> <p align='center'> Faça a gestão dos seus clientes aqui</p></a>
                                             </div>
                                  </div>
                         	 </div>
@@ -52,23 +59,14 @@
                                   <div class='thumbnail'  >
                                       <img src="images/client-icon-png-17.jpg" alt='...' class='img-circle' width='242' height='200'>
                                           <div class='caption'>
-                                            <h3 style='color: #006666' align='center'>Fornecedores</h3>
- 												<p align='center'><b>Algum texto: </b><a href="" </p></a>
+                                             <h3 style='color: #333' align='center'><b>Fornecedores</b></h3>
+                                             <a  href="fornecedor.jsp" target="_blank"><p align='center'> Faça a gestão dos seus fornecedores aqui </p></a>
                                             </div>
                                  </div>
                         	 </div>        
                  </div>
             </section>
-              
-                
         
-                  
     </body>
-  
-  <footer>
-    <br/><br/>
-    <center>
-    <p id= 'final'> Criado por Equipe J2L | Fatec Praia Grande </p>
-    </center>
-</footer>
+   <%@include file="WEB-INF/jspf/footer.jspf" %>
 </html>

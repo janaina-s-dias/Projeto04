@@ -19,12 +19,7 @@
         
         response.sendRedirect(request.getRequestURI());
     } 
-     
-     else if(request.getParameter("del") != null) {
-        int i = Integer.parseInt(request.getParameter("i"));
-        Bd.getFornecedoresList().remove(i);
-        response.sendRedirect(request.getRequestURI());
-    }  
+
      
 %>
 <html>
@@ -37,30 +32,18 @@
     	<link rel="shortcut icon" href="images/client-icon-png-21.jpg" />
         
         
-        <style>
-			#teste1 
-			{
-				text-align: left;	
-			}
-			
+       <style> #teste1  { text-align: left;} </style>
+        
   
-		</style>
-        
-        
-        
 <title>Fornecedores</title>
     </head>
     <body>
-        <!-- -->
         <div class="row">
                 <div class="col-md-12">
-             
                     <%@include file="WEB-INF/jspf/menu.jspf" %>
                   
                 </div>
                 </div>
-                
-                
                 <br/>
                     <div class="container">
                     	<div class="panel panel-success" id="teste">
@@ -97,44 +80,7 @@
                               <button type="submit" class="btn btn-info" name="pesq" data-toggle="tooltip" title="Pesquisar"/>Pesquisar </button>
                               </form>
                               
-                              <br/><br/>
-                              <table class="table table-hover">
-                               <thead>
-                                	<tr>
-                                    	<th>Registro</th>
-                                        <th>Nome</th>
-                                        <th>Razão Social</th>
-                                        <th>CNPJ</th>
-                                        <th>Email</th>
-                                        <th>Telefone</th>
-                                        <th>Endereço</th>
-                                        <th>Ação</th>
-                                    </tr>
-                               </thead>
-                               <tbody>
-                                 <%for (int i=0; i<Bd.getFornecedoresList().size(); i++){%>
-                                    <tr>
-                                            <td><%= i+1 %></td>
-                                            <td><%= Bd.getFornecedoresList().get(i).getNome()%></td>                                           
-                                            <td><%= Bd.getFornecedoresList().get(i).getRazaoSocial()%></td> 
-                                            <td><%= Bd.getFornecedoresList().get(i).getCnpj()%></td>
-                                            <td><%= Bd.getFornecedoresList().get(i).getEmail()%></td>
-                                            <td><%= Bd.getFornecedoresList().get(i).getTelefone()%></td>
-                                            <td><%= Bd.getFornecedoresList().get(i).getEndereco()%></td>
-                                             <td>
-                                             <form>
-                                            <input type="hidden" name="i" value="<%=i%>"/>
-                                             <button type="submit" class="btn btn-danger btn-sm" name="del" data-toggle="tooltip" title="Excluir"/>Excluir</button>
-                                             </form>
-                                              <form>
-                                            <input type="hidden" name="i" value="<%=i%>"/>
-                                             <button type="submit" class="btn btn-info btn-sm" name="alterar" data-toggle="tooltip" title="Alterar"/>Alterar</button>
-                                            </form>                    
-                                           </td>
-                                    </tr>
-                                     <%}%>
-                               </tbody>
-                              </table>                      
+                              <br/><br/>                 
                            </div>
                        </div>
                     </div>

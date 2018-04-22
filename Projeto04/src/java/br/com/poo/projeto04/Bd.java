@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 
 public class Bd {
-    private static final ArrayList<Cliente> clientesList = new ArrayList<>();
+    private static ArrayList<Cliente> clientesList = new ArrayList<>();
     private static ArrayList<Fornecedor> fornecedoresList = new ArrayList<>();
 
     public static ArrayList<Cliente> getClientesList() {

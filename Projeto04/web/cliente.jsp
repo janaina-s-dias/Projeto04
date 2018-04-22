@@ -18,13 +18,6 @@
         
         response.sendRedirect(request.getRequestURI());
     } 
-     
-     else if(request.getParameter("del") != null) {
-        int i = Integer.parseInt(request.getParameter("i"));
-        Bd.getClientesList().remove(i);
-        response.sendRedirect(request.getRequestURI());
-    }  
-     
 %>
 
 
@@ -46,7 +39,7 @@
 			{
 				text-align: left;	
 			}
-			#tabela1 {text-align:center}
+			
 		</style>
         
         
@@ -65,7 +58,7 @@
                 <br/>
                     <div class="container">
                     	<div class="panel panel-success" id="teste">
-    						<div class="panel-body"> 
+    			<div class="panel-body"> 
                               <h2>Cadastro de Cliente</h2>
                               <br/>
                               <form>
@@ -95,52 +88,11 @@
                                 </div>
                                
                               <button type="submit" class="btn btn-success" name="add" data-toggle="tooltip" title="Adicionar"/>Adicionar </button>
-                              <button type="submit" class="btn btn-info" name="pesq" data-toggle="tooltip" title="Pesquisar"/>Pesquisar </button>
-                              
                               </form>
                               
                               
                               <br/><br/>
-                              <table class="table table-hover">
-                               <thead >
-                                	<tr>
-                                    	<th>Registro</th>
-                                        <th>Nome</th>
-                                        <th>Email</th>
-                                        <th>Endereço</th>
-                                        <th>Telefone</th>
-                                        <th>RG</th>
-                                        <th>CPF</th>
-                                        <th colspan="2">Ação</th>
-                                    </tr>
-                                    
-                               </thead>
-                               <tbody>
-                                    <%for (int i=0; i<Bd.getClientesList().size(); i++){%>
-                                    <tr>
-                                            <td><%= i+1 %></td>
-                                            <td><%= Bd.getClientesList().get(i).getNome()%></td>                                           
-                                            <td><%= Bd.getClientesList().get(i).getEmail()%></td> 
-                                            <td><%= Bd.getClientesList().get(i).getEndereco()%></td>
-                                            <td><%= Bd.getClientesList().get(i).getTelefone()%></td>
-                                            <td><%= Bd.getClientesList().get(i).getRg()%></td>
-                                            <td><%= Bd.getClientesList().get(i).getCpf()%></td>
-                                      
-                                             <td>
-                                             <form>
-                                            <input type="hidden" name="i" value="<%=i%>"/>
-                                             <button type="submit" class="btn btn-danger btn-sm" name="del" data-toggle="tooltip" title="Excluir"/>Excluir</button>
-                                             </form>
-                                              <form>
-                                            <input type="hidden" name="i" value="<%=i%>"/>
-                                             <button type="submit" class="btn btn-info btn-sm" name="alterar" data-toggle="tooltip" title="Alterar"/>Alterar</button>
-                                            </form>                    
-                                           </td>
-                                    </tr>
-                                     <%}%>
- 
-                               </tbody>
-                              </table>                             
+                                                        
                            </div>
                        </div>
                     </div>
