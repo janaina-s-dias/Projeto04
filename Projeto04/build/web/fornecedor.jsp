@@ -77,7 +77,7 @@
                                 </div>
  
                               <button type="submit" class="btn btn-success" name="add" data-toggle="tooltip" title="Adicionar"/>Adicionar </button>
-                              <button type="submit" class="btn btn-info" name="pesq" data-toggle="tooltip" title="Pesquisar"/>Pesquisar </button>
+                              
                               </form>
                               
                               <br/><br/>                 
