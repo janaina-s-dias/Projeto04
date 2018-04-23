@@ -44,23 +44,23 @@
                   
                 </div>
                 </div>
-                <br/>
+            
                     <div class="container">
-                    	<div class="panel panel-success" id="teste">
-    						<div class="panel-body"> 
-                              <h2>Cadastro de Fornecedores</h2>
+                    	<div class="panel" id="teste">
+    				<div class="panel-body"> 
+                              <h2>Controle de Fornecedores</h2>
                               <br/>
                               <form>
                                 <div class="form-group">
-                                  <label for="email">Nome:</label>
+                                    <label for="nome">Nome:</label>
                                   <input type="text" class="form-control" name="nome" placeholder="Digite seu nome">
                                 </div>
                                 <div class="form-group">
-                                  <label for="email">Razão Social:</label>
+                                  <label for="razaoSocial">Razão Social:</label>
                                   <input type="text" class="form-control" name="razaoSocial" placeholder="Digite sua razão social">
                                 </div>
                                  <div class="form-group">
-                                  <label for="email">CNPJ:</label>
+                                  <label for="cnpj">CNPJ:</label>
                                   <input type="text" class="form-control" name="cnpj" placeholder="XX.XXX.XXX/XXXX-XX">
                                 </div>
                                 <div class="form-group">
@@ -68,11 +68,11 @@
                                   <input type="email" class="form-control" name="email" placeholder="Digite seu email">
                                 </div>
                                  <div class="form-group">
-                                  <label for="email">Telefone:</label>
+                                  <label for="tel">Telefone:</label>
                                   <input type="text" class="form-control" name="telefone" placeholder="(99)99999-9999">
                                 </div>
                                  <div class="form-group">
-                                  <label for="email">Endereço:</label>
+                                  <label for="end">Endereço:</label>
                                   <input type="text" class="form-control" name="endereco" placeholder="Digite seu endereço">
                                 </div>
  

@@ -20,6 +20,20 @@ public class Bd {
             }   return fornecedoresList;
     }
     
+    
+     public static ArrayList<Cliente> getClientesList() {
+            if (clientesList == null) {
+                clientesList = new ArrayList<>();  Cliente cli1 =  new Cliente();   
+                cli1.setNome("Maria");
+                cli1.setRg("399990009SP");
+                cli1.setCpf("99999999999");
+                cli1.setTelefone("(13)9999-9999");
+                cli1.setEmail("mm@mm.com.br");
+                cli1.setEndereco("Rua Riachuelo, 946 - Centro, Santos");
+                clientesList.add(cli1);
+            }   return clientesList;
+    }
+    
     public void alterarFornecedor(String escolha, int i, String alterado) {
         escolha.toLowerCase();
         if (escolha == "nome") {
@@ -38,12 +52,27 @@ public class Bd {
 
     }
     
+       public void alterarCliente(String escolha, int i, String alterado) {
+        escolha.toLowerCase();
+        if (escolha == "nome") {
+            clientesList.get(i).setNome(alterado);
+        } else if (escolha == "cpf") {
+            clientesList.get(i).setCpf(alterado);
+        } else if (escolha == "rg") {
+            clientesList.get(i).setRg(alterado);
+        } else if (escolha == "telefone") {
+            clientesList.get(i).setTelefone(alterado);
+        } else if (escolha == "email") {
+            clientesList.get(i).setEmail(alterado);
+        } else if (escolha == "endereco") {
+            clientesList.get(i).setEndereco(alterado);
+        }
+
+    }
     
     
 
-    public static ArrayList<Cliente> getClientesList() {
-        return clientesList;
-    }
+     
     
  
 }

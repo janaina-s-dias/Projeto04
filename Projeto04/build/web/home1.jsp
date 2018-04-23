@@ -1,8 +1,3 @@
-<%-- 
-    Document   : home
-    Created on : 20/04/2018, 13:23:38
-    Author     : JANAINASILVADIAS
---%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -17,13 +12,13 @@
         
   
         
-<title>SISCON ©</title>
+<title>Página Inicial</title>
     </head>
     <body>
         
         <div class="row" >
                 <div class="col-md-12" >
-                <%@include file="WEB-INF/jspf/menu1.jspf" %>
+                <%@include file="WEB-INF/jspf/menu2.jspf" %>
               
                 </div>
                 </div>
@@ -48,8 +43,8 @@
                                   <div class='thumbnail' >
                                       <img src="images/client-icon-png-21.jpg" alt='...' class='img-circle' width='200' height='200'>
                                           <div class='caption'>
-                                              <h3 style='color: #333' align='center'><b>Módulo Cliente</b></h3> 
-                                              <!--<center><a href="cliente.jsp" target="_blank"><button class="btn btn-default btn-sm">ENTRAR</button></a></center>-->
+                                              <a href="cliente.jsp" target="_blank"><h3 style='color: #333' align='center'><b>Módulo Cliente</b></h3></a>
+                                              <center><a href="cliente.jsp" target="_blank"><button class="btn btn-default btn-sm">ENTRAR</button></a></center>
                                             </div>
                                  </div>
                         	 </div>
@@ -57,8 +52,8 @@
                                   <div class='thumbnail'  >
                                       <img src="images/client-icon-png-17.jpg" alt='...' class='img-circle' width='200' height='200'>
                                           <div class='caption'>
-                                             <h3 style='color: #333' align='center'><b>Módulo Fornecedor</b></h3> 
-                                            
+                                            <a href="fornecedor.jsp" target="_blank"><h3 style='color: #333' align='center'><b>Módulo Fornecedor</b></h3></a>
+                                              <center><a href="fornecedor.jsp" target="_blank"><button class="btn btn-default btn-sm">ENTRAR</button></a></center>
                                             </div>
                                  </div>
                         	 </div>        

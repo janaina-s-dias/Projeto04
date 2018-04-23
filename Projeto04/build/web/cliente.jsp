@@ -53,13 +53,11 @@
                     <%@include file="WEB-INF/jspf/menu.jspf" %>     
                 </div>
                 </div>
-                
-                
-                <br/>
+
                     <div class="container">
-                    	<div class="panel panel-success" id="teste">
+                    	<div class="panel" id="teste">
     			<div class="panel-body"> 
-                              <h2>Cadastro de Cliente</h2>
+                              <h2>Controle de Clientes</h2>
                               <br/>
                               <form>
                                 <div class="form-group">

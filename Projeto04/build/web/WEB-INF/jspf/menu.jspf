@@ -7,15 +7,15 @@
                     <nav class="nav nav-tabs nav-justified">
                       <div class="container-fluid">
                         <div class="navbar-header">
-                            <a class="navbar-brand" href="home.jsp"><b>SISCON</b></a>
+                            <a class="navbar-brand" href="home1.jsp"><p style="color: black"><b>SISCON</b></p></a>
                         </div>
                         <ul class="nav navbar-nav">
                           <!--<li class="active">  <a href="home.jsp">Página Inicial</a></li> -->
-                          <li><a href="cliente.jsp"> <p style="color:  black; font-size: 18px">Cliente</p> </a></li>
-                          <li><a href="listarCliente.jsp"> <p style="color:  black; font-size: 18px">Listar Cliente</p> </a></li>
-                          <li><a href="listarFornecedor.jsp"> <p style="color:  black; font-size: 18px">Listar Fornecedor</p> </a></li>
-                          <li><a href="fornecedor.jsp"><p style="color:  black; font-size: 18px">Fornecedores</p></a></li>
-                          <li><a href="equipe.jsp"><p style="color:  black; font-size: 18px"> Sobre nós</p></a></li>
+                          <li><a href="cliente.jsp"> <p style="color:  black; font-size: 15px">Cliente</p> </a></li>
+                          <li><a href="listarCliente.jsp"> <p style="color:  black; font-size: 15px">Listar Cliente</p> </a></li>
+                          <li><a href="fornecedor.jsp"><p style="color:  black; font-size: 15px">Fornecedor</p></a></li>
+                          <li><a href="listarFornecedor.jsp"> <p style="color:  black; font-size: 15px">Listar Fornecedor</p> </a></li>
+                          <li><a href="equipe.jsp"><p style="color:  black; font-size: 15px"> Sobre</p></a></li>
                         </ul>
                             
                       </div>

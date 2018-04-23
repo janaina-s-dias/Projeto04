@@ -68,10 +68,8 @@
                                         <th>Email</th>
                                         <th>Telefone</th>
                                         <th>Endereço</th>
-                                        <th>Ação</th>
-                                        <%if (request.getParameter("alterar") != null) {%>
-                                        <th>Alteração</th>
-                                        <%}%>
+                                        <th colspan="2">Ação</th>
+                                        
                                     </tr>
                                </thead>
                                <tbody>
@@ -87,22 +85,24 @@
                                              <td>
                                                 <form>
                                                     <input type="hidden" name="i" value="<%=i%>">
-                                                    <input type="submit" name="alterar" value="Alterar">
-                                                    <input type="submit" name="del" value="Excluir"><br>
+                                                    <button type="submit" name="alterar" value="Alterar" class="btn-sm btn-info">Alterar</button>
+                                                    <button type="submit" name="del" value="Excluir" class="btn-sm btn-danger">Excluir</button><br>
                                                     </td>
+                                                    <br/>
                                                     <%if (request.getParameter("alterar") != null) {%>
-                                                    <td>
+                                                    <br/>
+                                                    <p style="color:  black; font-size: 18px">Altere o Registro aqui:</p>
                                                  
                                                   <input type="text" class="form-control" name="nnome" placeholder="Digite seu nome">
-                                                  <input type="email"class="form-control" name="nrazao" placeholder="razaoSocial">
-                                                  <input type="text" class="form-control" name="nendereco" placeholder="Digite seu endereço">
+                                                  <input type="email"class="form-control" name="nrazao" placeholder="Razão Social">
+                                                  <input type="text" class="form-control" name="nendereco" placeholder="Endereço">
                                                   <input type="text" class="form-control" name="ntelefone" placeholder="(99)99999-9999">
                                                   <input type="text" class="form-control" name="nemail" placeholder="email">
                                                   <input type="text" class="form-control" name="ncnpj" placeholder="cnpj">
-                                               
+                                               <br/>
                               				 
-                                                        <input type="submit" name="salve" value="Salvar"> &nbsp;
-                                                        <input type="submit" name="cancelar" value="Cancelar"> 
+                                                  <button type="submit" name="salve" class="btn-sm btn-success">Salvar</button>
+                                                  <button type="submit" name="cancelar"  class="btn-sm btn-default">Cancelar</button> 
                                                         <%}%>
                                                 </form>
                                             </td>    

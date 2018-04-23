@@ -5,8 +5,8 @@
     	 
 
 <footer>
-    <br/><br/>
+    <br/><br/><br/><br/><br/><br/>
     <center>
-    <p id= 'final'> Criado por Equipe J2L | Fatec Praia Grande </p>
+        <p id= 'final'> <b>Copyright © J2L | Fatec Praia Grande 2018</b> </p>
     </center>
 </footer>

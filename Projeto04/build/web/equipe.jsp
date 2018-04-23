@@ -14,12 +14,14 @@
          
         <div class="row">
                 <div class="col-md-12">
-                    <%@include file="WEB-INF/jspf/menu.jspf" %>                           
+                    <%@include file="WEB-INF/jspf/menu2.jspf" %>                           
                 </div>
-                </div>
-                <hr/>
+        </div>
+               
                  <div class="container-fluid">
                     <div class="row">
+                        <div class="panel">
+                            <div class="panel-body"> 
                     	<div class="col-md-12">
                         
                         <center><h2>Equipe</h2></center>
@@ -80,6 +82,8 @@
                        </div>   
                      </div>
                 </div>
+                </div>
+                         </div>
                 </div>
                 </body>
             <%@include file="WEB-INF/jspf/footer.jspf" %>

@@ -17,56 +17,58 @@
         
   
         
-<title>Página Inicial</title>
+<title>SISCON ©</title>
     </head>
     <body>
         
-        <div class="row">
-                <div class="col-md-12">
-                <%@include file="WEB-INF/jspf/menu.jspf" %>
+        <div class="row" >
+                <div class="col-md-12" >
+                <%@include file="WEB-INF/jspf/menu1.jspf" %>
               
                 </div>
                 </div>
-         <div class="container-fluid">
-            <div class="row">
-            <div class="col-md-12">
-                <div style="background-color: #000\9">
-              <center><h2>SISCON - Sistema de Controle de Informações</h2></center><br/>
+                <div class="container">
+                    <div class="panel">
+                        
+                        <div class="panel-body"> 
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div style="background-color: #000\9">
+                              <center><h2>SISCON - Sistema de Controle de Informações</h2></center><br/>
              
               
-                <center>
-                  
-                    <h4><p> O <b>SISCON </b> tem como objetivo auxiliar o seu cliente da melhor forma possível ao realizar o gerenciamento das informações do seu estabelecimento. <br/>
-                        O sistema fornece as opções de adicionar, alterar e excluir de forma segura as informações. <br/>
-                        <b>CONFIRA JÁ!!!</b>
-                        </p></h4></div><br/> 
-                    
-                </center>
+              <center> <h4><p> O <b>SISCON </b> tem como objetivo auxiliar o seu cliente da melhor forma possível ao realizar o gerenciamento das informações do seu estabelecimento. <br/>
+                        O sistema fornece as opções de adicionar, alterar e excluir de forma segura as informações. <br/>O sistema está dividido em dois módulos: o de Clientes e o de Fornecedores.<br/>
+                        </p></h4></div><br/></center>
              
 
             <section>
                  <div class='row'>
                          	<div class='col-sm-4 col-md-6'>
                                   <div class='thumbnail' >
-                                      <img src="images/client-icon-png-21.jpg" alt='...' class='img-circle' width='242' height='200'>
+                                      <img src="images/client-icon-png-21.jpg" alt='...' class='img-circle' width='200' height='200'>
                                           <div class='caption'>
-                                              <h3 style='color: #333' align='center'><b>Clientes</b></h3>
-                                              <a href="cliente.jsp" target="_blank"> <p align='center'> Faça a gestão dos seus clientes aqui</p></a>
+                                              <h3 style='color: #333' align='center'><b>Módulo Cliente</b></h3> 
+                                              <!--<center><a href="cliente.jsp" target="_blank"><button class="btn btn-default btn-sm">ENTRAR</button></a></center>-->
                                             </div>
                                  </div>
                         	 </div>
                      <div class='col-sm-4 col-md-6'>
                                   <div class='thumbnail'  >
-                                      <img src="images/client-icon-png-17.jpg" alt='...' class='img-circle' width='242' height='200'>
+                                      <img src="images/client-icon-png-17.jpg" alt='...' class='img-circle' width='200' height='200'>
                                           <div class='caption'>
-                                             <h3 style='color: #333' align='center'><b>Fornecedores</b></h3>
-                                             <a  href="fornecedor.jsp" target="_blank"><p align='center'> Faça a gestão dos seus fornecedores aqui </p></a>
+                                             <h3 style='color: #333' align='center'><b>Módulo Fornecedor</b></h3> 
+                                            
                                             </div>
                                  </div>
                         	 </div>        
                  </div>
             </section>
-        
+         </div>
+       </div>
+     </div>
+                  </div>
+     </div>
     </body>
    <%@include file="WEB-INF/jspf/footer.jspf" %>
 </html>
