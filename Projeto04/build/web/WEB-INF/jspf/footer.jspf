@@ -1,0 +1,12 @@
+        <script src="src/js/jquery.min.js"></script>
+        <script src="src/js/bootstrap.min.js"></script>
+        <script src="src/js/scripts.js"></script>
+    	<link href="src/css/bootstrap.css"  rel='stylesheet'>
+    	 
+
+<footer>
+    <br/><br/>
+    <center>
+    <p id= 'final'> Criado por Equipe J2L | Fatec Praia Grande </p>
+    </center>
+</footer>
